@@ -19,9 +19,9 @@ namespace Cwiczenia3.Controllers
         }
 
         [HttpGet]
-        public string GetStudent()
+        public string GetStudent(string orderBy)
         {
-            return "Kowalski,Malewski,Adrzejewski";
+            return $"Kowalski,Malewski,Adrzejewski sortowanie={orderBy}";
         }
     }
 }
