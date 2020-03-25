@@ -11,6 +11,10 @@ namespace Cwiczenia3.Controllers
     [Route("api/students")]
     public class StudentsController : ControllerBase
     {
+        private readonly IDbService _dbService;
+
+        public StudentsController(IDbService dbService)
+
         [HttpGet("{id}")]
         public IActionResult GetStudent(int id)
         {
