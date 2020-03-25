@@ -26,6 +26,20 @@ namespace Cwiczenia3.Controllers
             return Ok(student);
         }
 
+        [HttpPut]
+        public IActionResult PutCos(int id)
+        {
+            String message = "Aktualizacja dokonczona " + id;
+            return Ok(message);
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteCos(int id)
+        {
+            String message = "Usunie zakonczone " + id;
+            return Ok(message);
+        }
+
         [HttpGet]
         public string GetStudent(string orderBy)
         {
